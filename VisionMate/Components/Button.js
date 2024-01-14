@@ -11,7 +11,8 @@ export default function Button({ label, theme }) {
           >
             <Pressable
               style={[styles.button, { backgroundColor: "#fff" }]}
-              onPress={() => alert('You pressed a button.')}
+              // onPress={() => alert('You pressed the primary button.')}
+              onPress={() => alert('You pressed the primary button.')}
             >
               <Text style={[styles.buttonLabel, { color: "#25292e" }]}>{label}</Text>
             </Pressable>
@@ -20,7 +21,7 @@ export default function Button({ label, theme }) {
     }
     return (
     <View style={styles.buttonContainer}>
-      <Pressable style={styles.button} onPress={() => alert('You pressed a button made by missy.')}>
+      <Pressable style={styles.button} onPress={() => alert('You pressed the default button.')}>
         <Text style={styles.buttonLabel}>{label}</Text>
       </Pressable>
     </View>
