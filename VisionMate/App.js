@@ -21,9 +21,12 @@ export default function App() {
     <View style={styles.container}>
       {/* <SimpleButton theme="primary" label="Primary Button"></SimpleButton>
       <SimpleButton label="Default Button"></SimpleButton> */}
-      <Double backGrdColor={"#ffd33d"}></Double>
+      <Double backGrdColor={"#2fd33d"} h={90}></Double>
+      <Text>{"\n"}</Text>
+      <Double backGrdColor={"#ffd33d"} h={240}></Double>
       {/* <br/> */}
-      <Double backGrdColor={"#0000ff"}></Double>
+      <Text>{"\n"}</Text>
+      <Double backGrdColor={"#0000ff"} h={240}></Double>
       <StatusBar style="auto" />
     </View>
   );

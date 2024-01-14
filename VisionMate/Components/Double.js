@@ -46,7 +46,7 @@ const debounce = (onSingle, onDouble) => {
   }
 };
 
-export default function Double({ backGrdColor }) {
+export default function Double({ backGrdColor, h }) {
   const [tap, setTap] = useState("...");
 
   useEffect(() => {
@@ -65,9 +65,9 @@ export default function Double({ backGrdColor }) {
   };
 
   return ( 
-    <View style={styles.buttonContainer}>
+    <View style={[styles.buttonContainer, {height: h}]}>
       <Pressable style={[styles.button, { backgroundColor: backGrdColor }]} onPress={onPress}>
-        <Text>{"PRINT PRINT PRINT"}</Text>
+        {/* <Text>{"PRINT PRINT PRINT"}</Text> */}
         <Text>{tap}</Text>
       </Pressable>
     </View>
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
     //padding: 100,
   },
   buttonContainer: {
-    width: 320,
+    width: 340,
     height: 200,
     marginHorizontal: 20,
     alignItems: 'center',
